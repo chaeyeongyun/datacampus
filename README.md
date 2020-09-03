@@ -28,3 +28,15 @@
 
 ## 4. 시스템 사용 Tool
 ![dsBuffer bmp](https://user-images.githubusercontent.com/70565663/92070647-99b18e00-ede7-11ea-98c6-ddc06cb7af70.png)
+
+## 5. 프로젝트 요약
+* 공개되어있는 dataset과 crawling을 통해 의류 데이터 수집
+* (시간 관계 상 상의만 진행)
+* image의 상의 영역만 Boundary 처리
+* 여러 deep learning model로 training 및 test 진행
+* (VGG16, DenseNet, Inception V3, Inception-ResNet V2)
+* accuracy 가장 높은 model로 구현(Inception V3)
+* web application으로 서비스화 및 시각화
+* 사용자가 사진 입력시 재질, 색, 소매길이를 인식
+* 그에 맞는 세탁방법 제공
+
