@@ -14,17 +14,17 @@
 ## 3. 팀 소개
 > 유성호
 * 팀장
-* 개발 환경 구축, 프로젝트 관리, 발표, 분류 모델 평가
+* 개발 환경 구축, 프로젝트 관리, 발표, 분류 모델 평가, web 구현
 > 정세환
 *  모델 학습 자동화, 데이터 전처리, 분류 모델 평가, web 구현
 > 신동환
-*  학습 데이터수집,라벨링 ,ppt 제작
+*  학습 데이터수집, 라벨링 ,ppt 제작
 > 김가연
-* 학습 데이터수집,라벨링 ,영상 편집
+* 학습 데이터수집, 라벨링 ,영상 편집
 > 정승연
 * 모델 학습 자동화
 > 윤채영
-* 학습 데이터수집,라벨링 ,ppt 제작
+* 학습 데이터수집, 라벨링 ,ppt 제작
 
 ## 4. 시스템 사용 Tool
 ![dsBuffer bmp](https://user-images.githubusercontent.com/70565663/92070647-99b18e00-ede7-11ea-98c6-ddc06cb7af70.png)
@@ -40,6 +40,18 @@
 * 사용자가 사진 입력시 재질, 색, 소매길이를 인식
 * 그에 맞는 세탁방법 제공
 
-## 6. System
+## 6. Requirement
+* Keras version : 2.4.3
+* Tensorflow version : 2.3.0
 
-## 7. Requirement
+## 7. Code Explanation
+We used google colab
+* image data는 color, fabric, sleeve 3개의 category가 들어있는 image data 첨부
+* image detection을 위해 필요한 pretrained model(fabric.h5, color10.h5, length.h5) 첨부
+
+* Inferece.ipynb : optimizer 을 직접 epoch을 설정하며 구현한 model
+* main.ipynb : model을 불러 시각화
+* 주석을 참조해주세요
+* ppt 참조
+* 구현 결과 html 첨부
+
